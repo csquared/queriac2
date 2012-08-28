@@ -1,10 +1,9 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.6'
 gem 'pg'
 gem 'haml-rails'
 gem 'compass'
-gem 'psych'
 gem "omniauth-twitter"
 gem 'foreman'
 gem 'thin'
@@ -14,7 +13,6 @@ gem 'jquery-rails', '>= 1.0.12'
 gem 'formtastic'
 gem 'wordnik_ruby_helpers'
 gem 'hashie'
-gem "sentry-raven", :git => "https://github.com/coderanger/raven-ruby.git"
 gem 'ace-rails-ap'
 
 group :assets do
