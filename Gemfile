@@ -13,7 +13,6 @@ gem 'jquery-rails', '>= 1.0.12'
 gem 'formtastic'
 gem 'wordnik_ruby_helpers'
 gem 'hashie'
-gem 'ace-rails-ap'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.5'

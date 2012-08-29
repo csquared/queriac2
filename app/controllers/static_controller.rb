@@ -12,8 +12,13 @@ class StaticController < ApplicationController
       File.open(Rails.root + "public/zepto.min.js").read,
       File.open(Rails.root + "public/caboose.js").read,
     ]
-    url = "#{request.protocol}#{request.host_with_port}/exec/%s?v=1.0"
-    render :js => files.join(";\n\n").gsub(':queriac_url',url)
+
+    # e.g. http://localhost:3000, or https://productionserver.com
+    base_url = [request.protocol, request.host_with_port].join("")
+    render :js => files.join(";\n\n").gsub("BASE_URL", base_url)
+  end
+
+  def help
   end
 
 end
